@@ -43,7 +43,7 @@ class FourthFragment : Fragment() {
 
             val dataNamaIn = arguments?.getString("DATANAMA")
 
-            if (et_age.text != null && et_address.text.length > 0 && et_job.text.length > 0){
+            if (et_age.text.length > 0 && et_address.text.length > 0 && et_job.text.length > 0){
                 var age = et_age.text.toString()
                 var address = et_address.text.toString()
                 var job = et_job.text.toString()
@@ -56,8 +56,8 @@ class FourthFragment : Fragment() {
 //                        return "Ganjil"
 //                    }
 //                }
-
 //                val hasilCek = cekUsia(age!!.toInt())
+
                 val dataPerson = Person(age.toInt(), address, job)
 
                 //cara bundle
@@ -68,6 +68,7 @@ class FourthFragment : Fragment() {
 //                    , "HASILCEK" to hasilCek)
 
 //                val data = bundleOf("DATAPERSON" to dataPerson, "HASILCEK" to hasilCek, "DATANAMA" to dataNamaIn)
+
                 val data = bundleOf("DATAPERSON" to dataPerson, "DATANAMA" to dataNamaIn)
                 Navigation.findNavController(view).navigate(R.id.action_fourthFragment_to_thirdFragment, data )
             }else{

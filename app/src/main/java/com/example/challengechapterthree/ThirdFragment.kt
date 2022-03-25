@@ -57,7 +57,6 @@ class ThirdFragment : Fragment() {
 
 //            logic di 4th Fragment
 //            tv_age.setText ("Usia: ${dataPerson?.age} , bernilai $hasilCekIn")
-
 //            logic di 3rd fragment
             tv_age.setText ("Usia: ${dataPerson?.age} , bernilai ${cekUsia(dataPerson.age)}")
 

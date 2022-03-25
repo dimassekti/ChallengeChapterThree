@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/customBlue"
     tools:context=".FirstFragment">
 
     <TextView
@@ -10,6 +11,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Screen 1" />
 
     <LinearLayout
@@ -18,11 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-
         <Button
             android:id="@+id/btn_to_screen_dua"
             android:layout_gravity="center_horizontal"
             android:text="Go To Screen 2"
+            android:backgroundTint="@color/custmBlue2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
